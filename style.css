@@ -1,0 +1,362 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(to right, #16222a, #3a6073);
+
+}
+
+.scoreScreen{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.text{
+    color: white;
+    margin: 0;
+    text-align: left;
+
+
+}
+
+.title{
+    padding: 20px 20px;
+
+
+}
+
+.score{
+
+    flex-basis: 15%;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+span:last-child{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.playButton{
+    margin: 30px auto;
+    width: 20%;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.playButton:hover{
+    background-color: rgb(197, 200, 200);
+    color: rgb(21, 21, 74);
+
+}
+
+
+
+.rps{
+    text-align: center;
+    margin: auto; 
+    flex-basis: 50%;
+
+}
+
+
+.col{
+    display: flex;
+
+    text-align: center;
+    margin: auto;
+
+}
+
+
+
+.scissor{
+    width:30px;
+    padding: 20px;
+    border: 15px solid rgb(255, 255, 122);
+    background-color: rgb(252, 252, 253);
+    border-radius: 100%;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.2 ease;
+    background-color: rgb(255, 255, 122);
+    
+
+
+}
+.scissor:active{
+    transform: scale(0.9);
+}
+
+.scissor svg{
+    transform: rotate(90deg);
+}
+
+.paper{
+    width:30px;
+    padding: 20px;
+    border: 15px solid rgb(97, 155, 250);
+    background-color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+    background-color: rgb(97, 155, 250);
+
+
+}
+
+.paper:active{
+    transform: scale(0.9);
+}
+.rock{
+width:30px;
+    padding: 20px;
+    border: 15px solid rgb(255, 117, 90);
+    background-color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+    background-color: rgb(255, 117, 90)
+
+}
+.rock:active{
+    transform: scale(0.9);
+}
+
+.rockChoice{
+    background-color: rgb(255, 117, 90) ;
+}
+
+.scissorChoice{
+    background-color: rgb(255, 255, 122) ;
+}
+.paperChoice{
+    background-color: rgb(97, 155, 250) ;
+}
+
+
+
+.paper:hover{
+    transform: scale(0.9);
+        
+
+}
+.rock:hover{
+    transform: scale(0.9);
+}
+.scissor:hover{
+    transform: scale(0.9);
+}
+
+.feedBackText{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    /* border: 2px solid red; */
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+.theGame{
+    /* border: 2px solid blue; */
+    width: 25%;
+    margin: auto;
+}
+
+.newLayout{
+    display: flex;
+    justify-content: space-around;
+text-align: center;
+
+}
+.vs{
+    margin: auto;
+    width: 100px;
+    font-size: 2rem;
+    padding: 20px;
+    color: rgb(226, 225, 225);
+
+    margin: 30px;
+
+
+}
+
+.headText{
+    font-size: 1rem;
+    /* padding: 30px; */
+    /* margin: 50px; */
+    color: rgb(212, 212, 219);
+
+    
+}
+.rpsComp{
+    text-align: center;
+    margin: auto; 
+    flex-basis: 50%;
+}
+
+.win{
+    background-color: rgb(118, 238, 118);
+}
+.lose{
+    background-color: rgb(238, 144, 118);
+}
+.draw{
+    background-color: rgb(191, 193, 191);
+}
+
+.reset{
+    margin: 30px auto;
+    margin-top: 40px;
+    width: 20%;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.reset:hover{
+    background-color: rgb(197, 200, 200);
+    color: rgb(21, 21, 74);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .vs{
+        margin: 5px;
+    }
+
+    .scoreScreen{
+        text-align: center;
+        justify-content: center;
+    }
+    .col{
+       
+        transform: translateX(-90px);
+    }
+
+  }
+
+
+  .notes{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;   
+    color:  rgb(160, 160, 160) ;
+
+    position: relative;
+
+    margin: 0 auto;  
+    margin-top: 100px; 
+    bottom: 20px;
+    text-align: center;
+
+  }
+
+  .createRain{
+    position: fixed;
+    font-size: 2.5rem;
+    top:-1vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+  }
+
+  @keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+  }
+
+        
+  .endWin{
+ 
+    position:fixed;
+    padding: 80px;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
+     justify-content: center;
+     text-align: center;
+     background-color:  #3a6073;
+     border-radius: 20px;
+     border: 2px solid white;
+     color: white;
+
+    
+
+  }
+
+  .restartButton{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: inherit;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+
+  }
+
+   .restartButton:hover{
+    background-color: rgb(150, 158, 174);
+    color: rgb(255, 255, 255);
+  }
+
+  .winText{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .winOrLose{
+    margin: auto;
+    padding: 10px;
+  }
